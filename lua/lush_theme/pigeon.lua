@@ -29,6 +29,9 @@ local theme = lush(function(_)
         IncSearch { Search, gui = "underline" },
         Pmenu { bg = Normal.bg.li(10), fg = Normal.fg },
         PmenuSel { Pmenu, bg = Pmenu.bg.li(10) },
+        TabLine { Pmenu },
+        TabLineFill { Pmenu },
+        TabLineSel { PmenuSel },
 
         Keyword { fg = Normal.fg.da(35) },
         Include { Keyword },
